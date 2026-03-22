@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<!--
+   ______                            __
+  / ____/___  ____ ___  ____  __  __/ /____  _____
+ / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
+\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
+                    /_/
+        Created with Perplexity Computer
+        https://www.perplexity.ai/computer
+-->
+<meta name="generator" content="Perplexity Computer">
+<meta name="author" content="Perplexity Computer">
+<meta property="og:see_also" content="https://www.perplexity.ai/computer">
+<link rel="author" href="https://www.perplexity.ai/computer">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="pageTitle">Profile — ResearchSocial</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<style>
+/* ───────────── Design Tokens ───────────── */
+:root {
+  --text-xs: clamp(0.75rem,0.7rem + 0.25vw,0.875rem);
+  --text-sm: clamp(0.875rem,0.8rem + 0.35vw,1rem);
+  --text-base: clamp(1rem,0.95rem + 0.25vw,1.125rem);
+  --text-lg: clamp(1.125rem,1rem + 0.75vw,1.5rem);
+  --text-xl: clamp(1.5rem,1.2rem + 1.25vw,2.25rem);
+  --space-1:.25rem;--space-2:.5rem;--space-3:.75rem;--space-4:1rem;
+  --space-5:1.25rem;--space-6:1.5rem;--space-8:2rem;--space-10:2.5rem;
+  --space-12:3rem;--space-16:4rem;
+  --radius-sm:.375rem;--radius-md:.5rem;--radius-lg:.75rem;
+  --radius-xl:1rem;--radius-full:9999px;
+  --transition-interactive:180ms cubic-bezier(0.16,1,0.3,1);
+  --content-default:1060px;
+  --font-body:'Inter','Helvetica Neue',sans-serif;
+  --font-display:'DM Serif Display',Georgia,serif;
+}
+:root,[data-theme="light"]{
+  --color-bg:#f0f2f5;--color-surface:#ffffff;--color-surface-2:#f8f9fa;
+  --color-surface-offset:#eef0f3;--color-surface-dynamic:#e2e5ea;
+  --color-divider:#dde0e5;--color-border:#cdd1d8;
+  --color-text:#1a1d23;--color-text-muted:#636878;--color-text-faint:#a8adb8;
+  --color-text-inverse:#ffffff;
+  --color-primary:#4f46e5;--color-primary-hover:#3730a3;
+  --color-primary-active:#1e1b6b;--color-primary-highlight:#e0e7ff;
+  --color-accent:#0ea5e9;--color-success:#16a34a;--color-warning:#d97706;--color-error:#dc2626;
+  --color-tag-bg:#ede9fe;--color-tag-text:#5b21b6;
+  --shadow-sm:0 1px 3px rgba(0,0,0,0.08);--shadow-md:0 4px 16px rgba(0,0,0,0.1);
+  --shadow-lg:0 12px 40px rgba(0,0,0,0.14);--shadow-card:0 2px 8px rgba(0,0,0,0.06);
+}
+[data-theme="dark"]{
+  --color-bg:#0d1117;--color-surface:#161b22;--color-surface-2:#1c2128;
+  --color-surface-offset:#21262d;--color-surface-dynamic:#2d333b;
+  --color-divider:#30363d;--color-border:#3d444d;
+  --color-text:#e6edf3;--color-text-muted:#8b949e;--color-text-faint:#484f58;
+  --color-text-inverse:#0d1117;
+  --color-primary:#818cf8;--color-primary-hover:#a5b4fc;
+  --color-primary-active:#c7d2fe;--color-primary-highlight:#1e1b4b;
+  --color-accent:#38bdf8;--color-success:#4ade80;--color-warning:#fbbf24;--color-error:#f87171;
+  --color-tag-bg:#1e1b4b;--color-tag-text:#a5b4fc;
+  --shadow-sm:0 1px 3px rgba(0,0,0,0.3);--shadow-md:0 4px 16px rgba(0,0,0,0.4);
+  --shadow-lg:0 12px 40px rgba(0,0,0,0.5);--shadow-card:0 2px 8px rgba(0,0,0,0.25);
+}
+@media(prefers-color-scheme:dark){:root:not([data-theme]){
+  --color-bg:#0d1117;--color-surface:#161b22;--color-surface-2:#1c2128;
+  --color-surface-offset:#21262d;--color-surface-dynamic:#2d333b;
+  --color-divider:#30363d;--color-border:#3d444d;
+  --color-text:#e6edf3;--color-text-muted:#8b949e;--color-text-faint:#484f58;
+  --color-text-inverse:#0d1117;--color-primary:#818cf8;--color-primary-hover:#a5b4fc;
+  --color-primary-active:#c7d2fe;--color-primary-highlight:#1e1b4b;
+  --color-tag-bg:#1e1b4b;--color-tag-text:#a5b4fc;
+}}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;scroll-behavior:smooth;}
+body{min-height:100dvh;line-height:1.6;font-family:var(--font-body);font-size:var(--text-base);color:var(--color-text);background:var(--color-bg);transition:background .3s,color .3s;}
+img,svg{display:block;max-width:100%;}
+button{cursor:pointer;background:none;border:none;font:inherit;color:inherit;}
+a{color:inherit;text-decoration:none;}
+input,textarea,select{font:inherit;color:inherit;}
+h1,h2,h3,h4{text-wrap:balance;line-height:1.2;}
+:focus-visible{outline:2px solid var(--color-primary);outline-offset:3px;border-radius:var(--radius-sm);}
+
+/* ───────────── Navbar ───────────── */
+.navbar{display:flex;align-items:center;justify-content:space-between;padding:var(--space-4) var(--space-6);background:var(--color-surface);border-bottom:1px solid var(--color-divider);position:sticky;top:0;z-index:100;transition:background .3s;}
+.nav-logo{display:flex;align-items:center;gap:var(--space-3);font-size:var(--text-lg);font-family:var(--font-display);font-weight:700;color:var(--color-text);letter-spacing:-0.01em;}
+.nav-actions{display:flex;align-items:center;gap:var(--space-3);}
+.btn-icon{width:38px;height:38px;display:flex;align-items:center;justify-content:center;border-radius:var(--radius-full);color:var(--color-text-muted);transition:all var(--transition-interactive);}
+.btn-icon:hover{background:var(--color-surface-offset);color:var(--color-text);}
+.nav-username{font-size:var(--text-sm);font-weight:600;color:var(--color-text);cursor:pointer;transition:color var(--transition-interactive);}
+.nav-username:hover{color:var(--color-primary);}
+.nav-back{display:flex;align-items:center;gap:var(--space-2);font-size:var(--text-sm);font-weight:500;color:var(--color-text-muted);padding:var(--space-2) var(--space-3);border-radius:var(--radius-md);transition:all var(--transition-interactive);}
+.nav-back:hover{background:var(--color-surface-offset);color:var(--color-text);}
+
+/* ───────────── Page Layout ───────────── */
+.page{max-width:var(--content-default);margin:0 auto;padding:var(--space-8) var(--space-6);}
+.profile-grid{display:grid;grid-template-columns:300px 1fr;gap:var(--space-8);align-items:start;}
+
+/* ───────────── Profile Card ───────────── */
+.profile-card{background:var(--color-surface);border:1px solid var(--color-divider);border-radius:var(--radius-xl);overflow:hidden;position:sticky;top:88px;box-shadow:var(--shadow-card);}
+.profile-banner{height:96px;background:linear-gradient(135deg,var(--profile-color,#818cf8) 0%,var(--profile-color2,#38bdf8) 100%);position:relative;}
+.profile-avatar-wrap{position:absolute;bottom:-32px;left:var(--space-6);}
+.profile-avatar{width:72px;height:72px;border-radius:var(--radius-full);border:3px solid var(--color-surface);overflow:hidden;background:var(--color-surface-offset);display:flex;align-items:center;justify-content:center;font-size:var(--text-lg);font-weight:800;color:white;}
+.profile-avatar img{width:100%;height:100%;object-fit:cover;}
+.profile-body{padding:var(--space-12) var(--space-6) var(--space-6);}
+.profile-name{font-size:var(--text-lg);font-weight:800;color:var(--color-text);font-family:var(--font-display);}
+.profile-handle{font-size:var(--text-sm);color:var(--color-text-muted);margin-top:2px;}
+.profile-title{font-size:var(--text-sm);color:var(--color-text-muted);margin-top:var(--space-2);}
+.profile-affiliation{font-size:var(--text-sm);font-weight:600;color:var(--color-primary);margin-top:2px;}
+.profile-bio{font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.65;margin-top:var(--space-4);}
+.profile-meta{display:flex;flex-wrap:wrap;gap:var(--space-3);margin-top:var(--space-4);}
+.profile-meta-item{display:flex;align-items:center;gap:var(--space-2);font-size:var(--text-xs);color:var(--color-text-faint);}
+.profile-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-3);margin-top:var(--space-5);padding-top:var(--space-5);border-top:1px solid var(--color-divider);}
+.stat{text-align:center;}
+.stat-val{font-size:var(--text-base);font-weight:800;color:var(--color-text);font-family:var(--font-display);}
+.stat-lbl{font-size:var(--text-xs);color:var(--color-text-faint);}
+.profile-actions{display:flex;gap:var(--space-3);margin-top:var(--space-5);}
+.btn-follow-lg{flex:1;display:flex;align-items:center;justify-content:center;gap:var(--space-2);padding:var(--space-3);border-radius:var(--radius-full);font-size:var(--text-sm);font-weight:700;background:var(--color-primary);color:var(--color-text-inverse);transition:all var(--transition-interactive);border:none;cursor:pointer;}
+.btn-follow-lg:hover{background:var(--color-primary-hover);transform:translateY(-1px);box-shadow:var(--shadow-md);}
+.btn-follow-lg.following{background:var(--color-surface-offset);color:var(--color-text);border:1.5px solid var(--color-border);}
+.btn-follow-lg.following:hover{border-color:var(--color-error);color:var(--color-error);}
+[data-theme="dark"] .btn-follow-lg:not(.following){color:#0d1117;}
+.btn-message{width:40px;height:40px;display:flex;align-items:center;justify-content:center;border-radius:var(--radius-full);border:1.5px solid var(--color-border);color:var(--color-text-muted);transition:all var(--transition-interactive);}
+.btn-message:hover{border-color:var(--color-primary);color:var(--color-primary);}
+
+/* Collaborate toggle */
+.collab-toggle{display:flex;align-items:center;justify-content:space-between;padding:var(--space-3) var(--space-4);background:var(--color-surface-offset);border-radius:var(--radius-lg);margin-top:var(--space-4);}
+.collab-label{font-size:var(--text-xs);font-weight:600;color:var(--color-text-muted);}
+.collab-status{font-size:var(--text-xs);font-weight:700;transition:color var(--transition-interactive);}
+.collab-status.open{color:var(--color-success);}
+.collab-status.closed{color:var(--color-text-faint);}
+.toggle-switch{position:relative;width:36px;height:20px;flex-shrink:0;}
+.toggle-switch input{opacity:0;width:0;height:0;position:absolute;}
+.toggle-track{position:absolute;inset:0;background:var(--color-surface-dynamic);border-radius:var(--radius-full);cursor:pointer;transition:background var(--transition-interactive);}
+.toggle-switch input:checked + .toggle-track{background:var(--color-success);}
+.toggle-thumb{position:absolute;top:3px;left:3px;width:14px;height:14px;background:white;border-radius:50%;transition:transform var(--transition-interactive);pointer-events:none;}
+.toggle-switch input:checked ~ .toggle-thumb{transform:translateX(16px);}
+
+/* Interests */
+.interests-list{display:flex;flex-wrap:wrap;gap:var(--space-2);margin-top:var(--space-4);}
+.interest-chip{font-size:var(--text-xs);font-weight:500;padding:var(--space-1) var(--space-3);border-radius:var(--radius-full);background:var(--color-tag-bg);color:var(--color-tag-text);}
+
+/* Edit profile btn */
+.btn-edit-profile{width:100%;margin-top:var(--space-4);padding:var(--space-3);border-radius:var(--radius-full);font-size:var(--text-sm);font-weight:600;border:1.5px solid var(--color-border);color:var(--color-text-muted);display:flex;align-items:center;justify-content:center;gap:var(--space-2);transition:all var(--transition-interactive);}
+.btn-edit-profile:hover{border-color:var(--color-primary);color:var(--color-primary);}
+
+/* ───────────── Badges ───────────── */
+.badges-grid{display:flex;flex-wrap:wrap;gap:var(--space-3);margin-top:var(--space-4);}
+.badge-item{display:flex;align-items:center;gap:var(--space-2);padding:var(--space-2) var(--space-3);background:var(--color-surface-offset);border:1px solid var(--color-divider);border-radius:var(--radius-lg);cursor:default;transition:all var(--transition-interactive);position:relative;}
+.badge-item:hover{border-color:var(--color-primary);background:var(--color-primary-highlight);}
+.badge-item:hover .badge-tooltip{opacity:1;pointer-events:all;transform:translateY(0);}
+.badge-emoji{font-size:18px;line-height:1;}
+.badge-label{font-size:var(--text-xs);font-weight:600;color:var(--color-text);}
+.badge-tooltip{position:absolute;bottom:calc(100% + 6px);left:50%;transform:translateX(-50%) translateY(4px);background:var(--color-text);color:var(--color-bg);font-size:var(--text-xs);padding:var(--space-2) var(--space-3);border-radius:var(--radius-md);white-space:nowrap;opacity:0;pointer-events:none;transition:all .15s ease;z-index:10;}
+
+/* ───────────── Main Content ───────────── */
+.section-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:var(--space-5);}
+.section-title{font-size:var(--text-lg);font-weight:700;color:var(--color-text);}
+.section-tabs{display:flex;gap:var(--space-1);background:var(--color-surface-offset);border-radius:var(--radius-full);padding:var(--space-1);}
+.section-tab{padding:var(--space-2) var(--space-4);border-radius:var(--radius-full);font-size:var(--text-sm);font-weight:500;color:var(--color-text-muted);cursor:pointer;transition:all var(--transition-interactive);}
+.section-tab.active{background:var(--color-surface);color:var(--color-text);box-shadow:var(--shadow-sm);}
+.section-tab:hover:not(.active){color:var(--color-text);}
+
+/* ───────────── Post Cards ───────────── */
+.post-card{background:var(--color-surface);border:1px solid var(--color-divider);border-radius:var(--radius-xl);padding:var(--space-5);margin-bottom:var(--space-4);transition:all var(--transition-interactive);box-shadow:var(--shadow-card);}
+.post-card:hover{border-color:var(--color-border);box-shadow:var(--shadow-md);transform:translateY(-1px);}
+.post-card-header{display:flex;align-items:center;gap:var(--space-3);margin-bottom:var(--space-3);}
+.post-type-badge{font-size:var(--text-xs);font-weight:600;padding:3px var(--space-3);border-radius:var(--radius-full);letter-spacing:.04em;text-transform:uppercase;}
+.badge-proposal{background:#dbeafe;color:#1d4ed8;}
+[data-theme="dark"] .badge-proposal{background:#1e3a5f;color:#60a5fa;}
+.badge-study{background:#d1fae5;color:#065f46;}
+[data-theme="dark"] .badge-study{background:#14532d;color:#34d399;}
+.badge-review{background:#fef3c7;color:#92400e;}
+[data-theme="dark"] .badge-review{background:#451a03;color:#fbbf24;}
+.badge-findings{background:#ede9fe;color:#5b21b6;}
+[data-theme="dark"] .badge-findings{background:#2e1065;color:#a78bfa;}
+.post-time{font-size:var(--text-xs);color:var(--color-text-faint);}
+.post-title{font-size:var(--text-base);font-weight:700;color:var(--color-text);font-family:var(--font-display);line-height:1.3;margin-bottom:var(--space-2);}
+.post-excerpt{font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.65;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;margin-bottom:var(--space-3);}
+.post-thumbnail{width:100%;height:180px;border-radius:var(--radius-lg);overflow:hidden;background:var(--color-surface-offset);border:1px solid var(--color-divider);margin-bottom:var(--space-3);}
+.post-thumbnail svg{width:100%;height:100%;}
+.post-tags{display:flex;flex-wrap:wrap;gap:var(--space-2);margin-bottom:var(--space-4);}
+.tag{font-size:var(--text-xs);font-weight:500;padding:var(--space-1) var(--space-3);border-radius:var(--radius-full);background:var(--color-tag-bg);color:var(--color-tag-text);}
+.tag.green{background:#d1fae5;color:#065f46;}[data-theme="dark"] .tag.green{background:#14532d;color:#34d399;}
+.tag.blue{background:#dbeafe;color:#1d4ed8;}[data-theme="dark"] .tag.blue{background:#1e3a5f;color:#60a5fa;}
+.tag.orange{background:#fef3c7;color:#92400e;}[data-theme="dark"] .tag.orange{background:#451a03;color:#fbbf24;}
+.tag.red{background:#fee2e2;color:#991b1b;}[data-theme="dark"] .tag.red{background:#450a0a;color:#fca5a5;}
+.tag.teal{background:#ccfbf1;color:#065f46;}[data-theme="dark"] .tag.teal{background:#134e4a;color:#5eead4;}
+.post-footer{display:flex;align-items:center;justify-content:space-between;padding-top:var(--space-4);border-top:1px solid var(--color-divider);}
+.post-actions{display:flex;align-items:center;gap:var(--space-2);}
+.action-btn{display:flex;align-items:center;gap:var(--space-2);padding:var(--space-2) var(--space-3);border-radius:var(--radius-md);font-size:var(--text-sm);font-weight:500;color:var(--color-text-muted);transition:all var(--transition-interactive);}
+.action-btn:hover{background:var(--color-surface-offset);color:var(--color-text);}
+.action-btn.liked{color:var(--color-error);background:#fee2e2;}
+[data-theme="dark"] .action-btn.liked{background:#450a0a;}
+.action-btn.liked svg{fill:var(--color-error);}
+
+/* ───────────── Edit Profile Modal ───────────── */
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.6);backdrop-filter:blur(6px);z-index:200;display:flex;align-items:center;justify-content:center;padding:var(--space-4);opacity:0;pointer-events:none;transition:opacity .2s ease;}
+.modal-overlay.open{opacity:1;pointer-events:all;}
+.modal{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-xl);width:100%;max-width:520px;max-height:85dvh;overflow-y:auto;box-shadow:var(--shadow-lg);transform:scale(.95) translateY(10px);transition:transform .2s cubic-bezier(0.16,1,0.3,1);}
+.modal-overlay.open .modal{transform:scale(1) translateY(0);}
+.modal-header{display:flex;align-items:center;justify-content:space-between;padding:var(--space-5) var(--space-6);border-bottom:1px solid var(--color-divider);position:sticky;top:0;background:var(--color-surface);z-index:1;}
+.modal-title{font-size:var(--text-lg);font-weight:700;}
+.modal-close{width:32px;height:32px;display:flex;align-items:center;justify-content:center;border-radius:var(--radius-full);color:var(--color-text-muted);transition:all var(--transition-interactive);}
+.modal-close:hover{background:var(--color-surface-offset);color:var(--color-text);}
+.modal-body{padding:var(--space-6);}
+.form-group{margin-bottom:var(--space-5);}
+.form-label{display:block;font-size:var(--text-sm);font-weight:600;color:var(--color-text);margin-bottom:var(--space-2);}
+.form-input,.form-textarea{width:100%;padding:var(--space-3) var(--space-4);background:var(--color-surface-offset);border:1px solid var(--color-border);border-radius:var(--radius-lg);font-size:var(--text-sm);color:var(--color-text);transition:all var(--transition-interactive);}
+.form-input:focus,.form-textarea:focus{outline:none;border-color:var(--color-primary);box-shadow:0 0 0 3px var(--color-primary-highlight);}
+.form-textarea{resize:vertical;min-height:96px;line-height:1.6;}
+.avatar-upload-row{display:flex;align-items:center;gap:var(--space-5);}
+.avatar-preview{width:64px;height:64px;border-radius:var(--radius-full);background:var(--color-surface-offset);border:2px solid var(--color-border);display:flex;align-items:center;justify-content:center;overflow:hidden;flex-shrink:0;font-size:var(--text-lg);font-weight:800;color:white;}
+.avatar-preview img{width:100%;height:100%;object-fit:cover;}
+.btn-upload{padding:var(--space-2) var(--space-4);border:1.5px dashed var(--color-border);border-radius:var(--radius-lg);font-size:var(--text-sm);color:var(--color-text-muted);cursor:pointer;transition:all var(--transition-interactive);}
+.btn-upload:hover{border-color:var(--color-primary);color:var(--color-primary);}
+.modal-footer{display:flex;gap:var(--space-3);padding:var(--space-5) var(--space-6);border-top:1px solid var(--color-divider);}
+.btn-save{flex:1;padding:var(--space-3);background:var(--color-primary);color:var(--color-text-inverse);border-radius:var(--radius-full);font-size:var(--text-sm);font-weight:700;transition:all var(--transition-interactive);}
+.btn-save:hover{background:var(--color-primary-hover);}
+[data-theme="dark"] .btn-save{color:#0d1117;}
+.btn-cancel{padding:var(--space-3) var(--space-6);border:1.5px solid var(--color-border);border-radius:var(--radius-full);font-size:var(--text-sm);font-weight:600;color:var(--color-text-muted);transition:all var(--transition-interactive);}
+.btn-cancel:hover{border-color:var(--color-error);color:var(--color-error);}
+
+/* ───────────── Auth Modal ───────────── */
+.auth-tabs{display:flex;gap:var(--space-1);background:var(--color-surface-offset);border-radius:var(--radius-full);padding:var(--space-1);margin-bottom:var(--space-6);}
+.auth-tab{flex:1;text-align:center;padding:var(--space-2);border-radius:var(--radius-full);font-size:var(--text-sm);font-weight:600;cursor:pointer;color:var(--color-text-muted);transition:all var(--transition-interactive);}
+.auth-tab.active{background:var(--color-surface);color:var(--color-text);box-shadow:var(--shadow-sm);}
+.auth-select{width:100%;padding:var(--space-3) var(--space-4);background:var(--color-surface-offset);border:1px solid var(--color-border);border-radius:var(--radius-lg);font-size:var(--text-sm);color:var(--color-text);transition:all var(--transition-interactive);-webkit-appearance:none;appearance:none;cursor:pointer;}
+.auth-select:focus{outline:none;border-color:var(--color-primary);box-shadow:0 0 0 3px var(--color-primary-highlight);}
+.auth-error{color:var(--color-error);font-size:var(--text-xs);margin-top:var(--space-2);display:none;}
+.auth-error.show{display:block;}
+
+/* ───────────── Toast ───────────── */
+.toast{position:fixed;bottom:var(--space-6);right:var(--space-6);z-index:300;background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:var(--space-3) var(--space-5);font-size:var(--text-sm);font-weight:500;color:var(--color-text);box-shadow:var(--shadow-lg);display:flex;align-items:center;gap:var(--space-2);transform:translateY(16px);opacity:0;transition:all .3s cubic-bezier(0.16,1,0.3,1);pointer-events:none;}
+.toast.show{transform:translateY(0);opacity:1;}
+
+/* ───────────── Empty State ───────────── */
+.empty-state{text-align:center;padding:var(--space-16) var(--space-8);color:var(--color-text-faint);}
+.empty-state-icon{font-size:48px;margin-bottom:var(--space-4);}
+.empty-state-text{font-size:var(--text-sm);font-weight:500;}
+
+/* ───────────── Footer ───────────── */
+.site-footer{text-align:center;padding:var(--space-8);color:var(--color-text-faint);font-size:var(--text-xs);border-top:1px solid var(--color-divider);margin-top:var(--space-16);}
+.site-footer a{color:var(--color-primary);}
+
+/* ───────────── Responsive ───────────── */
+@media(max-width:860px){
+  .profile-grid{grid-template-columns:1fr;}
+  .profile-card{position:static;}
+}
+@media(max-width:600px){
+  .page{padding:var(--space-4);}
+  .navbar{padding:var(--space-3) var(--space-4);}
+  .nav-logo span{display:none;}
+  .toast{right:var(--space-4);left:var(--space-4);}
+}
+</style>
+</head>
+<body>
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div style="display:flex;align-items:center;gap:var(--space-4);">
+    <a href="../index.html" class="nav-back">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+      Feed
+    </a>
+    <a href="../index.html" class="nav-logo">
+      <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-label="ResearchSocial logo">
+        <rect width="32" height="32" rx="8" fill="var(--color-primary)"/>
+        <circle cx="11" cy="11" r="4.5" stroke="white" stroke-width="2" fill="none"/>
+        <circle cx="21" cy="11" r="4.5" stroke="white" stroke-width="2" fill="none" opacity="0.6"/>
+        <circle cx="16" cy="21" r="4.5" stroke="white" stroke-width="2" fill="none" opacity="0.8"/>
+        <line x1="15" y1="11" x2="17" y2="11" stroke="white" stroke-width="1.5"/>
+        <line x1="13" y1="15" x2="14.5" y2="17" stroke="white" stroke-width="1.5"/>
+        <line x1="19" y1="15" x2="17.5" y2="17" stroke="white" stroke-width="1.5"/>
+      </svg>
+      <span>ResearchSocial</span>
+    </a>
+  </div>
+  <div class="nav-actions">
+    <button class="btn-icon" data-theme-toggle title="Toggle theme">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+    <button class="btn-icon" id="navAuthBtn" title="Sign in" onclick="openAuthModal()">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+    </button>
+    <span class="nav-username" id="navUserLabel" style="display:none;" onclick="window.location.href=getMyProfileURL()"></span>
+  </div>
+</nav>
+
+<div class="page">
+  <div class="profile-grid">
+    <!-- LEFT: Profile card -->
+    <div>
+      <div class="profile-card" id="profileCard">
+        <div class="profile-banner" id="profileBanner"></div>
+        <div class="profile-body">
+          <div class="profile-avatar-wrap">
+            <div class="profile-avatar" id="profileAvatar"></div>
+          </div>
+          <div class="profile-name" id="profileName"></div>
+          <div class="profile-handle" id="profileHandleEl"></div>
+          <div class="profile-title" id="profileTitleEl"></div>
+          <div class="profile-affiliation" id="profileAffiliation"></div>
+          <p class="profile-bio" id="profileBio"></p>
+          <div class="profile-meta" id="profileMeta"></div>
+          <div class="profile-stats" id="profileStats"></div>
+          <div class="profile-actions" id="profileActions"></div>
+          <div class="collab-toggle" id="collabToggle">
+            <div>
+              <div class="collab-label">Open to Collaborate</div>
+              <div class="collab-status" id="collabStatusText"></div>
+            </div>
+            <label class="toggle-switch" id="collabToggleWrap">
+              <input type="checkbox" id="collabCheckbox" onchange="handleCollabToggle()">
+              <div class="toggle-track"></div>
+              <div class="toggle-thumb"></div>
+            </label>
+          </div>
+          <div class="interests-list" id="interestsList"></div>
+          <button class="btn-edit-profile" id="editProfileBtn" style="display:none;" onclick="openEditModal()">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+            Edit Profile
+          </button>
+        </div>
+      </div>
+
+      <!-- Badges -->
+      <div style="margin-top:var(--space-6);">
+        <div class="section-header"><h2 class="section-title">Badges</h2></div>
+        <div class="badges-grid" id="badgesGrid"></div>
+      </div>
+    </div>
+
+    <!-- RIGHT: Posts & activity -->
+    <div>
+      <div class="section-header">
+        <div class="section-tabs" role="tablist">
+          <button class="section-tab active" role="tab" data-tab="posts">Posts</button>
+          <button class="section-tab" role="tab" data-tab="activity">Activity</button>
+          <button class="section-tab" role="tab" data-tab="about">About</button>
+        </div>
+      </div>
+      <div id="tabContent"></div>
+    </div>
+  </div>
+</div>
+
+<!-- EDIT PROFILE MODAL -->
+<div class="modal-overlay" id="editModal">
+  <div class="modal">
+    <div class="modal-header">
+      <h2 class="modal-title">Edit Profile</h2>
+      <button class="modal-close" onclick="closeEditModal()">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="modal-body">
+      <div class="form-group">
+        <label class="form-label">Photo</label>
+        <div class="avatar-upload-row">
+          <div class="profile-avatar avatar-preview" id="editAvatarPreview"></div>
+          <div>
+            <label class="btn-upload" for="avatarUploadInput">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline;vertical-align:middle;margin-right:4px"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+              Upload photo
+            </label>
+            <input type="file" id="avatarUploadInput" accept="image/*" style="display:none;" onchange="handleAvatarUpload(event)">
+            <p style="font-size:var(--text-xs);color:var(--color-text-faint);margin-top:var(--space-2);">JPG, PNG up to 2MB</p>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="editName">Display Name</label>
+        <input class="form-input" id="editName" type="text" placeholder="Your full name">
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="editTitle">Title / Role</label>
+        <input class="form-input" id="editTitle" type="text" placeholder="e.g. PhD Candidate, Postdoctoral Researcher">
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="editAffiliation">Affiliation</label>
+        <input class="form-input" id="editAffiliation" type="text" placeholder="University / Institution">
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="editBio">Bio</label>
+        <textarea class="form-textarea" id="editBio" placeholder="Tell the community about your research…"></textarea>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="editInterests">Research Interests</label>
+        <input class="form-input" id="editInterests" type="text" placeholder="Comma-separated: Sleep, EEG, Memory">
+        <p style="font-size:var(--text-xs);color:var(--color-text-faint);margin-top:var(--space-2);">Separate with commas</p>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="editWebsite">Website</label>
+        <input class="form-input" id="editWebsite" type="url" placeholder="https://yoursite.com">
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn-cancel" onclick="closeEditModal()">Cancel</button>
+      <button class="btn-save" onclick="saveProfile()">Save Changes</button>
+    </div>
+  </div>
+</div>
+
+<!-- AUTH MODAL -->
+<div class="modal-overlay" id="authModal">
+  <div class="modal">
+    <div class="modal-header">
+      <h2 class="modal-title" id="authModalTitle">Sign In</h2>
+      <button class="modal-close" onclick="closeAuthModal()">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="modal-body">
+      <div class="auth-tabs">
+        <button class="auth-tab active" onclick="switchAuthTab('login')">Sign In</button>
+        <button class="auth-tab" onclick="switchAuthTab('register')">Create Account</button>
+      </div>
+      <div id="loginForm">
+        <div class="form-group">
+          <label class="form-label">Sign in as a researcher</label>
+          <select class="auth-select" id="loginSelect">
+            <option value="">— Select your profile —</option>
+          </select>
+          <div class="auth-error" id="loginError">Please select a profile to continue.</div>
+        </div>
+        <button class="btn-save" style="width:100%;padding:var(--space-3);" onclick="doLogin()">Sign In</button>
+      </div>
+      <div id="registerForm" style="display:none;">
+        <div class="form-group">
+          <label class="form-label" for="regHandle">Choose a username</label>
+          <input class="form-input" id="regHandle" type="text" placeholder="e.g. ResearcherName123">
+          <div class="auth-error" id="regError"></div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="regName">Full Name</label>
+          <input class="form-input" id="regName" type="text" placeholder="Dr. Jane Smith">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="regAffiliation">Affiliation</label>
+          <input class="form-input" id="regAffiliation" type="text" placeholder="Your university or institution">
+        </div>
+        <button class="btn-save" style="width:100%;padding:var(--space-3);" onclick="doRegister()">Create Account</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast" role="status" aria-live="polite">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-success)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+  <span id="toastMsg">Done!</span>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a>
+</footer>
+
+<script src="../data.js"></script>
+<script>
+// ─── Determine which profile to show ───────────────────────────────────────
+const HANDLE = (function() {
+  // Filename is e.g. AlicePSY.html → extract handle
+  const parts = window.location.pathname.split('/');
+  const file = parts[parts.length - 1].replace('.html', '');
+  return file;
+})();
+
+let USER = null; // will be set after load
+
+// ─── Theme toggle ──────────────────────────────────────────────────────────
+(function() {
+  const toggle = document.querySelector('[data-theme-toggle]');
+  const root = document.documentElement;
+  let theme = localStorage.getItem('rs_theme') ||
+    (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  root.setAttribute('data-theme', theme);
+  updateThemeIcon(theme);
+  toggle.addEventListener('click', () => {
+    theme = theme === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', theme);
+    localStorage.setItem('rs_theme', theme);
+    updateThemeIcon(theme);
+    // Re-render charts if posts tab active
+    renderTabContent(currentTab);
+    showToast(theme === 'dark' ? '🌙 Dark mode on' : '☀️ Light mode on');
+  });
+  function updateThemeIcon(t) {
+    toggle.setAttribute('aria-label', 'Switch to ' + (t === 'dark' ? 'light' : 'dark') + ' mode');
+    toggle.innerHTML = t === 'dark'
+      ? `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>`
+      : `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>`;
+  }
+})();
+
+// ─── Utility ───────────────────────────────────────────────────────────────
+function fmtNum(n) {
+  if (n >= 1000) return (n/1000).toFixed(1).replace(/\.0$/,'') + 'k';
+  return n;
+}
+function getMyProfileURL() {
+  const me = rsGetCurrentUser();
+  if (!me) return '#';
+  return rsProfileURL(me);
+}
+function escHtml(s) {
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// ─── Init nav ──────────────────────────────────────────────────────────────
+function initNav() {
+  const me = rsGetCurrentUser();
+  const btn = document.getElementById('navAuthBtn');
+  const lbl = document.getElementById('navUserLabel');
+  if (me) {
+    const u = rsGetUserProfile(me);
+    btn.style.display = 'none';
+    lbl.style.display = 'flex';
+    lbl.innerHTML = `<svg width="28" height="28" viewBox="0 0 28 28"><rect width="28" height="28" rx="14" fill="${u.color}"/><text x="14" y="19" text-anchor="middle" font-size="11" font-weight="700" fill="white" font-family="Inter,sans-serif">${u.initials}</text></svg>&nbsp;@${me}`;
+  } else {
+    btn.style.display = 'flex';
+    lbl.style.display = 'none';
+  }
+}
+
+// ─── Load profile ──────────────────────────────────────────────────────────
+function loadProfile() {
+  USER = rsGetUserProfile(HANDLE);
+  if (!USER) {
+    document.getElementById('profileCard').innerHTML = '<div style="padding:2rem;text-align:center;color:var(--color-text-faint)">Profile not found.</div>';
+    return;
+  }
+
+  document.title = USER.name + ' — ResearchSocial';
+  document.getElementById('pageTitle').textContent = USER.name + ' — ResearchSocial';
+
+  // Banner gradient using user color
+  const banner = document.getElementById('profileBanner');
+  const dark2 = shiftColor(USER.color, -30);
+  banner.style.background = `linear-gradient(135deg, ${USER.color} 0%, ${dark2} 100%)`;
+
+  // Avatar
+  const avatarEl = document.getElementById('profileAvatar');
+  avatarEl.style.background = USER.color;
+  if (USER.avatar) {
+    avatarEl.innerHTML = `<img src="${escHtml(USER.avatar)}" alt="${escHtml(USER.name)}">`;
+  } else {
+    avatarEl.textContent = USER.initials;
+  }
+
+  // Text fields
+  document.getElementById('profileName').textContent = USER.name;
+  document.getElementById('profileHandleEl').textContent = '@' + USER.handle;
+  document.getElementById('profileTitleEl').textContent = USER.title || '';
+  document.getElementById('profileAffiliation').textContent = USER.affiliation || '';
+  document.getElementById('profileBio').textContent = USER.bio || '';
+
+  // Meta
+  const meta = document.getElementById('profileMeta');
+  let metaHTML = '';
+  if (USER.location) metaHTML += `<span class="profile-meta-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>${escHtml(USER.location)}</span>`;
+  if (USER.website) metaHTML += `<a href="${escHtml(USER.website)}" target="_blank" rel="noopener" class="profile-meta-item" style="color:var(--color-primary)"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>Website</a>`;
+  if (USER.joined) metaHTML += `<span class="profile-meta-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Joined ${escHtml(USER.joined)}</span>`;
+  meta.innerHTML = metaHTML;
+
+  // Stats
+  const statsEl = document.getElementById('profileStats');
+  statsEl.innerHTML = `
+    <div class="stat"><div class="stat-val">${fmtNum(USER.followers)}</div><div class="stat-lbl">Followers</div></div>
+    <div class="stat"><div class="stat-val">${fmtNum(USER.following)}</div><div class="stat-lbl">Following</div></div>
+    <div class="stat"><div class="stat-val">${fmtNum(USER.citations)}</div><div class="stat-lbl">Citations</div></div>`;
+
+  // Actions (follow / message)
+  const me = rsGetCurrentUser();
+  const isOwnProfile = me === HANDLE;
+  const actionsEl = document.getElementById('profileActions');
+  if (!isOwnProfile) {
+    const isFollowing = rsIsFollowing(HANDLE);
+    actionsEl.innerHTML = `
+      <button class="btn-follow-lg ${isFollowing ? 'following' : ''}" id="followBtn" onclick="handleFollow()">
+        ${isFollowing ? '✓ Following' : '+ Follow'}
+      </button>
+      <button class="btn-message" title="Message" onclick="showToast('💬 Messaging coming soon!')">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      </button>`;
+  } else {
+    actionsEl.innerHTML = '';
+    document.getElementById('editProfileBtn').style.display = 'flex';
+  }
+
+  // Collaborate toggle
+  const collabCollab = rsGetLS('rs_collab_open_' + HANDLE, USER.openToCollaborate);
+  const checkbox = document.getElementById('collabCheckbox');
+  checkbox.checked = collabCollab;
+  updateCollabStatus(collabCollab);
+  // Only own profile can toggle
+  if (!isOwnProfile) {
+    checkbox.disabled = true;
+    document.getElementById('collabToggleWrap').style.opacity = '0.5';
+    document.getElementById('collabToggleWrap').style.pointerEvents = 'none';
+  }
+
+  // Interests
+  const interestsEl = document.getElementById('interestsList');
+  interestsEl.innerHTML = (USER.interests || []).map(i =>
+    `<span class="interest-chip">${escHtml(i)}</span>`).join('');
+
+  // Badges
+  const badgesEl = document.getElementById('badgesGrid');
+  badgesEl.innerHTML = (USER.badges || []).map(b => `
+    <div class="badge-item">
+      <span class="badge-emoji">${b.icon}</span>
+      <span class="badge-label">${escHtml(b.label)}</span>
+      <div class="badge-tooltip">${escHtml(b.desc)}</div>
+    </div>`).join('');
+  if (!USER.badges || USER.badges.length === 0) {
+    badgesEl.innerHTML = '<p style="font-size:var(--text-sm);color:var(--color-text-faint)">No badges yet.</p>';
+  }
+
+  // Initial tab
+  renderTabContent('posts');
+  initNav();
+
+  // Tab switching
+  document.querySelectorAll('.section-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.section-tab').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      currentTab = tab.dataset.tab;
+      renderTabContent(currentTab);
+    });
+  });
+}
+
+// ─── Color helper ──────────────────────────────────────────────────────────
+function shiftColor(hex, amount) {
+  let r = parseInt(hex.slice(1,3),16);
+  let g = parseInt(hex.slice(3,5),16);
+  let b = parseInt(hex.slice(5,7),16);
+  r = Math.max(0, Math.min(255, r + amount));
+  g = Math.max(0, Math.min(255, g + amount));
+  b = Math.max(0, Math.min(255, b + amount));
+  return '#' + [r,g,b].map(v=>v.toString(16).padStart(2,'0')).join('');
+}
+
+// ─── Tab content ───────────────────────────────────────────────────────────
+let currentTab = 'posts';
+function renderTabContent(tab) {
+  const el = document.getElementById('tabContent');
+  if (tab === 'posts') {
+    const posts = RS_POSTS.filter(p => (USER.postIds || []).includes(p.id));
+    if (posts.length === 0) {
+      el.innerHTML = `<div class="empty-state"><div class="empty-state-icon">📝</div><div class="empty-state-text">No posts yet.</div></div>`;
+      return;
+    }
+    el.innerHTML = posts.map(p => renderPostCard(p)).join('');
+    attachLikeListeners();
+  } else if (tab === 'activity') {
+    el.innerHTML = renderActivity();
+  } else if (tab === 'about') {
+    el.innerHTML = renderAbout();
+  }
+}
+
+function renderPostCard(post) {
+  const likedPosts = rsGetLS('rs_likes', {});
+  const isLiked = likedPosts[post.id];
+  const likeCount = post.likes + (isLiked ? 1 : 0);
+  const commentCount = (rsGetLS('rs_comments_' + post.id, []).length) + post.comments;
+  return `
+  <article class="post-card" data-post-id="${post.id}">
+    <div class="post-card-header">
+      <span class="post-type-badge ${post.badgeClass}">${post.badgeText}</span>
+      <span class="post-time">${post.time}</span>
+    </div>
+    <h3 class="post-title">${post.title}</h3>
+    <p class="post-excerpt">${post.excerpt}</p>
+    <div class="post-thumbnail" data-chart="${post.chart}">${getChartSVG(post.chart)}</div>
+    <div class="post-tags">${post.tags.map(t=>`<span class="tag ${t.cls}">${t.label}</span>`).join('')}</div>
+    <div class="post-footer">
+      <div class="post-actions">
+        <button class="action-btn like-btn ${isLiked?'liked':''}" data-post-id="${post.id}">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="${isLiked?'currentColor':'none'}" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          <span class="like-count">${likeCount}</span>
+        </button>
+        <button class="action-btn" onclick="showToast('💬 Go to feed to comment!')">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          ${commentCount}
+        </button>
+      </div>
+      <a href="../index.html" style="font-size:var(--text-xs);color:var(--color-primary)">View in feed →</a>
+    </div>
+  </article>`;
+}
+
+function renderActivity() {
+  const comments = [
+    { text: 'Have you considered adding a subjective sleepiness scale (KSS)?', target: 'Sleep Deprivation Study', time: '2h ago' },
+    { text: 'Fascinating design. Looking forward to the pilot results.', target: 'CRISPR Off-Target Study', time: '5h ago' },
+    { text: 'Null results are critical! Kudos for publishing this.', target: 'Screen Time & Cortisol', time: '1d ago' },
+  ];
+  return `
+  <div class="post-card" style="margin-bottom:var(--space-3)">
+    <div style="font-size:var(--text-sm);font-weight:700;margin-bottom:var(--space-4)">Recent Comments</div>
+    ${comments.map(c=>`
+    <div style="padding:var(--space-3) 0;border-bottom:1px solid var(--color-divider)">
+      <div style="font-size:var(--text-xs);color:var(--color-text-faint);margin-bottom:var(--space-1)">Commented on <span style="color:var(--color-primary)">${escHtml(c.target)}</span> · ${escHtml(c.time)}</div>
+      <div style="font-size:var(--text-sm);color:var(--color-text-muted)">"${escHtml(c.text)}"</div>
+    </div>`).join('')}
+  </div>
+  <div class="post-card">
+    <div style="font-size:var(--text-sm);font-weight:700;margin-bottom:var(--space-4)">Recent Collaborations</div>
+    <div style="font-size:var(--text-sm);color:var(--color-text-muted)">Accepted collaboration request from @TaroMATH · 3d ago</div>
+    <div style="font-size:var(--text-sm);color:var(--color-text-muted);margin-top:var(--space-3)">Accepted collaboration request from @PriyaDEV · 1w ago</div>
+  </div>`;
+}
+
+function renderAbout() {
+  const u = USER;
+  return `
+  <div class="post-card">
+    <div style="font-size:var(--text-sm);font-weight:700;margin-bottom:var(--space-4)">Research Stats</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-4)">
+      <div style="background:var(--color-surface-offset);border-radius:var(--radius-lg);padding:var(--space-4);text-align:center">
+        <div style="font-size:var(--text-xl);font-weight:800;font-family:var(--font-display);color:var(--color-primary)">${fmtNum(u.papers||0)}</div>
+        <div style="font-size:var(--text-xs);color:var(--color-text-faint);margin-top:4px">Papers</div>
+      </div>
+      <div style="background:var(--color-surface-offset);border-radius:var(--radius-lg);padding:var(--space-4);text-align:center">
+        <div style="font-size:var(--text-xl);font-weight:800;font-family:var(--font-display);color:var(--color-primary)">${fmtNum(u.citations||0)}</div>
+        <div style="font-size:var(--text-xs);color:var(--color-text-faint);margin-top:4px">Citations</div>
+      </div>
+      <div style="background:var(--color-surface-offset);border-radius:var(--radius-lg);padding:var(--space-4);text-align:center">
+        <div style="font-size:var(--text-xl);font-weight:800;font-family:var(--font-display);color:var(--color-primary)">${fmtNum(u.followers||0)}</div>
+        <div style="font-size:var(--text-xs);color:var(--color-text-faint);margin-top:4px">Followers</div>
+      </div>
+      <div style="background:var(--color-surface-offset);border-radius:var(--radius-lg);padding:var(--space-4);text-align:center">
+        <div style="font-size:var(--text-xl);font-weight:800;font-family:var(--font-display);color:var(--color-primary)">${u.postIds ? u.postIds.length : 0}</div>
+        <div style="font-size:var(--text-xs);color:var(--color-text-faint);margin-top:4px">Posts</div>
+      </div>
+    </div>
+    <div style="margin-top:var(--space-6);padding-top:var(--space-5);border-top:1px solid var(--color-divider)">
+      <div style="font-size:var(--text-sm);font-weight:700;margin-bottom:var(--space-3)">Affiliation</div>
+      <div style="font-size:var(--text-sm);color:var(--color-text-muted)">${escHtml(u.affiliation||'—')}</div>
+    </div>
+    <div style="margin-top:var(--space-5);padding-top:var(--space-5);border-top:1px solid var(--color-divider)">
+      <div style="font-size:var(--text-sm);font-weight:700;margin-bottom:var(--space-3)">Joined</div>
+      <div style="font-size:var(--text-sm);color:var(--color-text-muted)">${escHtml(u.joined||'—')}</div>
+    </div>
+    ${u.website ? `<div style="margin-top:var(--space-5);padding-top:var(--space-5);border-top:1px solid var(--color-divider)"><div style="font-size:var(--text-sm);font-weight:700;margin-bottom:var(--space-3)">Website</div><a href="${escHtml(u.website)}" target="_blank" rel="noopener" style="font-size:var(--text-sm);color:var(--color-primary)">${escHtml(u.website)}</a></div>` : ''}
+  </div>`;
+}
+
+// ─── Like listener ─────────────────────────────────────────────────────────
+function attachLikeListeners() {
+  document.querySelectorAll('#tabContent .like-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const id = btn.dataset.postId;
+      const liked = rsGetLS('rs_likes', {});
+      liked[id] = !liked[id];
+      rsSetLS('rs_likes', liked);
+      const post = RS_POSTS.find(p => p.id === id);
+      btn.classList.toggle('liked', liked[id]);
+      btn.querySelector('svg').setAttribute('fill', liked[id] ? 'currentColor' : 'none');
+      btn.querySelector('.like-count').textContent = post.likes + (liked[id] ? 1 : 0);
+      if (liked[id]) showToast('❤️ Added to liked posts');
+    });
+  });
+}
+
+// ─── Follow handler ────────────────────────────────────────────────────────
+function handleFollow() {
+  const isNow = rsToggleFollow(HANDLE);
+  const btn = document.getElementById('followBtn');
+  if (btn) {
+    btn.classList.toggle('following', isNow);
+    btn.textContent = isNow ? '✓ Following' : '+ Follow';
+  }
+  showToast(isNow ? `✅ Following @${HANDLE}` : `Unfollowed @${HANDLE}`);
+}
+
+// ─── Collaborate toggle ────────────────────────────────────────────────────
+function handleCollabToggle() {
+  const val = document.getElementById('collabCheckbox').checked;
+  rsSetLS('rs_collab_open_' + HANDLE, val);
+  updateCollabStatus(val);
+  showToast(val ? '🤝 You\'re open to collaborate!' : '🔒 Collaboration closed');
+}
+function updateCollabStatus(val) {
+  const el = document.getElementById('collabStatusText');
+  el.textContent = val ? 'Open' : 'Closed';
+  el.className = 'collab-status ' + (val ? 'open' : 'closed');
+}
+
+// ─── Edit Profile Modal ────────────────────────────────────────────────────
+function openEditModal() {
+  const u = rsGetUserProfile(HANDLE);
+  document.getElementById('editName').value = u.name || '';
+  document.getElementById('editTitle').value = u.title || '';
+  document.getElementById('editAffiliation').value = u.affiliation || '';
+  document.getElementById('editBio').value = u.bio || '';
+  document.getElementById('editInterests').value = (u.interests || []).join(', ');
+  document.getElementById('editWebsite').value = u.website || '';
+  // Avatar preview
+  const prev = document.getElementById('editAvatarPreview');
+  prev.style.background = u.color;
+  if (u.avatar) { prev.innerHTML = `<img src="${escHtml(u.avatar)}" alt="">`; }
+  else { prev.textContent = u.initials; }
+  document.getElementById('editModal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeEditModal() {
+  document.getElementById('editModal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+let pendingAvatar = null;
+function handleAvatarUpload(e) {
+  const file = e.target.files[0];
+  if (!file) return;
+  if (file.size > 2 * 1024 * 1024) { showToast('⚠️ Image must be under 2MB'); return; }
+  const reader = new FileReader();
+  reader.onload = (ev) => {
+    pendingAvatar = ev.target.result;
+    const prev = document.getElementById('editAvatarPreview');
+    prev.innerHTML = `<img src="${pendingAvatar}" alt="">`;
+  };
+  reader.readAsDataURL(file);
+}
+function saveProfile() {
+  const patch = {
+    name: document.getElementById('editName').value.trim() || USER.name,
+    title: document.getElementById('editTitle').value.trim(),
+    affiliation: document.getElementById('editAffiliation').value.trim(),
+    bio: document.getElementById('editBio').value.trim(),
+    interests: document.getElementById('editInterests').value.split(',').map(s=>s.trim()).filter(Boolean),
+    website: document.getElementById('editWebsite').value.trim(),
+  };
+  if (pendingAvatar) patch.avatar = pendingAvatar;
+  rsUpdateUserProfile(HANDLE, patch);
+  pendingAvatar = null;
+  closeEditModal();
+  loadProfile();
+  showToast('✅ Profile updated!');
+}
+document.addEventListener('keydown', e => { if (e.key === 'Escape') { closeEditModal(); closeAuthModal(); } });
+document.getElementById('editModal').addEventListener('click', e => { if (e.target === document.getElementById('editModal')) closeEditModal(); });
+document.getElementById('authModal').addEventListener('click', e => { if (e.target === document.getElementById('authModal')) closeAuthModal(); });
+
+// ─── Auth ───────────────────────────────────────────────────────────────────
+function openAuthModal() {
+  const sel = document.getElementById('loginSelect');
+  sel.innerHTML = '<option value="">— Select your profile —</option>' +
+    Object.keys(RS_USERS).map(h => `<option value="${h}">@${h} — ${RS_USERS[h].name}</option>`).join('');
+  document.getElementById('authModal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeAuthModal() {
+  document.getElementById('authModal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+function switchAuthTab(tab) {
+  document.querySelectorAll('.auth-tab').forEach((t,i) => t.classList.toggle('active', (i===0&&tab==='login')||(i===1&&tab==='register')));
+  document.getElementById('loginForm').style.display = tab === 'login' ? '' : 'none';
+  document.getElementById('registerForm').style.display = tab === 'register' ? '' : 'none';
+}
+function doLogin() {
+  const sel = document.getElementById('loginSelect');
+  const handle = sel.value;
+  if (!handle) { document.getElementById('loginError').classList.add('show'); return; }
+  document.getElementById('loginError').classList.remove('show');
+  rsSetCurrentUser(handle);
+  closeAuthModal();
+  initNav();
+  showToast(`👋 Welcome back, @${handle}!`);
+  loadProfile(); // re-render to show own-profile controls if needed
+}
+function doRegister() {
+  const handle = document.getElementById('regHandle').value.trim().replace(/\s+/g,'');
+  const name = document.getElementById('regName').value.trim();
+  const aff = document.getElementById('regAffiliation').value.trim();
+  const errEl = document.getElementById('regError');
+  if (!handle || handle.length < 3) { errEl.textContent = 'Username must be at least 3 characters.'; errEl.classList.add('show'); return; }
+  if (RS_USERS[handle] || rsGetLS('rs_accounts',{})[handle]) { errEl.textContent = 'Username already taken.'; errEl.classList.add('show'); return; }
+  errEl.classList.remove('show');
+  // Create new account
+  const newUser = {
+    handle, name: name || handle,
+    initials: (name||handle).split(' ').map(w=>w[0]).join('').slice(0,2).toUpperCase(),
+    color: '#818cf8',
+    title: '', affiliation: aff || '',
+    location: '', joined: new Date().toLocaleDateString('en-US',{month:'long',year:'numeric'}),
+    bio: '', interests: [], website: null,
+    followers: 0, following: 0, papers: 0, citations: 0,
+    openToCollaborate: true,
+    badges: [{ id:'early', label:'Early Researcher', icon:'🌱', desc:'One of the first 500 members' }],
+    postIds: []
+  };
+  // Store in accounts
+  const accounts = rsGetLS('rs_accounts', {});
+  accounts[handle] = newUser;
+  rsSetLS('rs_accounts', accounts);
+  // Also register in a custom user list so rsGetUserProfile works
+  RS_USERS[handle] = newUser;
+  rsSetCurrentUser(handle);
+  closeAuthModal();
+  initNav();
+  showToast(`🎉 Account created! Welcome, @${handle}`);
+  // Redirect to their new profile
+  window.location.href = rsProfileURL(handle);
+}
+
+// ─── Toast ──────────────────────────────────────────────────────────────────
+let toastTimer;
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  document.getElementById('toastMsg').textContent = msg;
+  t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove('show'), 2800);
+}
+
+// ─── Chart SVGs (same as index.html) ────────────────────────────────────────
+function getChartSVG(type) {
+  const dark = document.documentElement.getAttribute('data-theme') === 'dark';
+  const bg = dark ? '#1c2128' : '#f8f9fa';
+  const gridC = dark ? '#30363d' : '#e5e7eb';
+  const textC = dark ? '#8b949e' : '#6b7280';
+  const line1 = dark ? '#818cf8' : '#4f46e5';
+  const line2 = dark ? '#38bdf8' : '#0ea5e9';
+  const bar1  = dark ? '#818cf8' : '#4f46e5';
+  const bar2  = dark ? '#34d399' : '#10b981';
+  const dot   = dark ? '#f87171' : '#ef4444';
+  const area1 = dark ? '#818cf8' : '#4f46e5';
+  switch(type) {
+    case 'line': return `<svg viewBox="0 0 600 180" xmlns="http://www.w3.org/2000/svg"><rect width="600" height="180" fill="${bg}"/>${[0,1,2,3,4].map(i=>`<line x1="60" y1="${15+i*33}" x2="580" y2="${15+i*33}" stroke="${gridC}" stroke-width="1"/>`).join('')}<polyline points="60,130 164,112 268,88 372,65 476,50 580,42" fill="none" stroke="${line1}" stroke-width="2.5" stroke-linejoin="round"/><polyline points="60,145 164,140 268,130 372,108 476,95 580,85" fill="none" stroke="${line2}" stroke-width="2" stroke-linejoin="round" stroke-dasharray="6,3"/>${[60,164,268,372,476,580].map((x,i)=>{const ys=[130,112,88,65,50,42];return`<circle cx="${x}" cy="${ys[i]}" r="4" fill="${line1}" stroke="${bg}" stroke-width="2"/>`;}).join('')}<text x="180" y="14" fill="${line1}" font-size="10" font-family="Inter,sans-serif" font-weight="600">— Sleep-restricted</text><text x="340" y="14" fill="${line2}" font-size="10" font-family="Inter,sans-serif" font-weight="600">-- Control</text></svg>`;
+    case 'bar': return `<svg viewBox="0 0 600 180" xmlns="http://www.w3.org/2000/svg"><rect width="600" height="180" fill="${bg}"/>${[0,1,2,3,4].map(i=>`<line x1="50" y1="${15+i*30}" x2="590" y2="${15+i*30}" stroke="${gridC}" stroke-width="1"/>`).join('')}${[['SpCas9',100,dark?'#f87171':'#ef4444'],['Optimized',31,bar1],['eSpCas9',58,dark?'#fbbf24':'#d97706'],['HiFi',22,bar2],['eCas9',45,dark?'#a78bfa':'#7c3aed']].map(([label,h,color],i)=>{const x=70+i*106;const barH=h*1.2;const y=135-barH;return`<rect x="${x}" y="${y}" width="72" height="${barH}" fill="${color}" rx="4" opacity="0.85"/><text x="${x+36}" y="152" fill="${textC}" font-size="10" font-family="Inter,sans-serif" text-anchor="middle">${label}</text><text x="${x+36}" y="${y-4}" fill="${color}" font-size="10" font-family="Inter,sans-serif" text-anchor="middle" font-weight="700">${h}%</text>`;}).join('')}</svg>`;
+    case 'scatter': return `<svg viewBox="0 0 600 180" xmlns="http://www.w3.org/2000/svg"><rect width="600" height="180" fill="${bg}"/>${[0,1,2,3,4].map(i=>`<line x1="50" y1="${15+i*34}" x2="590" y2="${15+i*34}" stroke="${gridC}" stroke-width="1"/>`).join('')}<line x1="50" y1="15" x2="590" y2="150" stroke="${line2}" stroke-width="1.5" stroke-dasharray="8,4" opacity="0.5"/>${[[80,130],[120,115],[155,100],[190,118],[230,78],[270,88],[310,65],[350,80],[390,50],[430,60],[470,42],[510,50],[550,38]].map(([x,y])=>`<circle cx="${x}" cy="${y}" r="5" fill="${dot}" opacity="0.7" stroke="${bg}" stroke-width="1"/>`).join('')}${[[80,120],[130,108],[175,96],[215,110],[260,82],[295,72],[340,56],[380,68],[420,46],[455,52],[490,36],[525,44],[560,34]].map(([x,y])=>`<circle cx="${x}" cy="${y}" r="5" fill="${bar2}" opacity="0.7" stroke="${bg}" stroke-width="1"/>`).join('')}</svg>`;
+    case 'brain': return `<svg viewBox="0 0 600 180" xmlns="http://www.w3.org/2000/svg"><rect width="600" height="180" fill="${bg}"/><ellipse cx="200" cy="95" rx="130" ry="75" fill="none" stroke="${gridC}" stroke-width="2"/><ellipse cx="200" cy="95" rx="95" ry="52" fill="none" stroke="${gridC}" stroke-width="1" stroke-dasharray="4,4"/><ellipse cx="175" cy="72" rx="38" ry="26" fill="${line1}" opacity="0.55"/><ellipse cx="225" cy="69" rx="32" ry="22" fill="${line2}" opacity="0.45"/><ellipse cx="190" cy="110" rx="28" ry="18" fill="${bar2}" opacity="0.4"/><text x="155" y="76" fill="white" font-size="9" font-family="Inter,sans-serif" font-weight="700">PFC</text><text x="211" y="73" fill="white" font-size="9" font-family="Inter,sans-serif" font-weight="700">ACC</text><text x="174" y="114" fill="white" font-size="9" font-family="Inter,sans-serif" font-weight="700">Ins</text><rect x="380" y="50" width="12" height="12" fill="${line1}" rx="2" opacity="0.8"/><text x="398" y="60" fill="${textC}" font-size="11" font-family="Inter,sans-serif">High activity (GAD)</text><rect x="380" y="72" width="12" height="12" fill="${line2}" rx="2" opacity="0.7"/><text x="398" y="82" fill="${textC}" font-size="11" font-family="Inter,sans-serif">Moderate activity</text><rect x="380" y="94" width="12" height="12" fill="${bar2}" rx="2" opacity="0.7"/><text x="398" y="104" fill="${textC}" font-size="11" font-family="Inter,sans-serif">Reduced coupling</text></svg>`;
+    case 'area': return `<svg viewBox="0 0 600 180" xmlns="http://www.w3.org/2000/svg"><rect width="600" height="180" fill="${bg}"/><defs><linearGradient id="ag2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="${area1}" stop-opacity="0.4"/><stop offset="100%" stop-color="${area1}" stop-opacity="0.02"/></linearGradient></defs><polygon points="50,148 113,140 176,130 240,118 303,106 366,90 430,74 493,55 556,40 590,35 590,148" fill="url(#ag2)"/><polyline points="50,148 113,140 176,130 240,118 303,106 366,90 430,74 493,55 556,40 590,35" fill="none" stroke="${area1}" stroke-width="2.5"/>${[[50,148],[113,140],[176,130],[240,118],[303,106],[366,90],[430,74],[493,55],[556,40],[590,35]].map(([x,y])=>`<circle cx="${x}" cy="${y}" r="3.5" fill="${area1}" stroke="${bg}" stroke-width="2"/>`).join('')}</svg>`;
+    case 'cluster': return `<svg viewBox="0 0 600 180" xmlns="http://www.w3.org/2000/svg"><rect width="600" height="180" fill="${bg}"/>${Array.from({length:55},(_,i)=>{const cls=[[150,85,32],[250,55,26],[340,115,30],[160,145,18],[420,75,23]];const c=cls[i%5];const x=c[0]+(Math.sin(i*2.5)*c[2]);const y=c[1]+(Math.cos(i*1.7)*c[2]);const cs=[line1,line2,bar2,dot,dark?'#fbbf24':'#d97706'];return`<circle cx="${x}" cy="${y}" r="${2.5+Math.sin(i)*0.8}" fill="${cs[i%5]}" opacity="0.75"/>`;}).join('')}<text x="133" y="52" fill="${line1}" font-size="10" font-family="Inter,sans-serif" font-weight="700">HSC</text><text x="233" y="28" fill="${line2}" font-size="10" font-family="Inter,sans-serif" font-weight="700">GMP</text><text x="328" y="85" fill="${bar2}" font-size="10" font-family="Inter,sans-serif" font-weight="700">MEP</text><text x="146" y="168" fill="${dot}" font-size="10" font-family="Inter,sans-serif" font-weight="700">Pro-B</text><text x="405" y="52" fill="${dark?'#fbbf24':'#d97706'}" font-size="10" font-family="Inter,sans-serif" font-weight="700">★ New</text></svg>`;
+    case 'regression': return `<svg viewBox="0 0 600 180" xmlns="http://www.w3.org/2000/svg"><rect width="600" height="180" fill="${bg}"/>${[0,1,2,3,4].map(i=>`<line x1="50" y1="${15+i*34}" x2="590" y2="${15+i*34}" stroke="${gridC}" stroke-width="1"/>`).join('')}<line x1="60" y1="92" x2="580" y2="90" stroke="${bar2}" stroke-width="2" stroke-dasharray="8,4"/><polygon points="60,76 580,74 580,108 60,110" fill="${bar2}" opacity="0.12"/>${[[80,88],[115,72],[150,104],[185,82],[220,96],[255,70],[290,112],[325,86],[360,102],[395,78],[430,92],[465,104],[500,82],[535,96],[565,86]].map(([x,y])=>`<circle cx="${x}" cy="${y}" r="4.5" fill="${dot}" opacity="0.65" stroke="${bg}" stroke-width="1.5"/>`).join('')}<text x="380" y="62" fill="${bar2}" font-size="10" font-family="Inter,sans-serif" font-weight="700">β = 0.04, p = .41 (n.s.)</text></svg>`;
+    case 'bar2': return `<svg viewBox="0 0 600 180" xmlns="http://www.w3.org/2000/svg"><rect width="600" height="180" fill="${bg}"/>${[0,1,2,3,4].map(i=>`<line x1="50" y1="${15+i*30}" x2="590" y2="${15+i*30}" stroke="${gridC}" stroke-width="1"/>`).join('')}${[['EN',72,line1],['ZH',58,bar2],['AR',49,dot],['HI',61,dark?'#fbbf24':'#d97706'],['DE',68,dark?'#a78bfa':'#7c3aed'],['PT',55,line2],['JP',51,dark?'#f97316':'#ea580c'],['SW',44,dark?'#34d399':'#059669']].map(([l,h,c],i)=>{const x=60+i*66;const bH=h*1.25;const y=130-bH;return`<rect x="${x}" y="${y}" width="46" height="${bH}" fill="${c}" rx="3" opacity="0.82"/><text x="${x+23}" y="148" fill="${textC}" font-size="10" font-family="Inter,sans-serif" text-anchor="middle">${l}</text><text x="${x+23}" y="${y-4}" fill="${c}" font-size="10" font-family="Inter,sans-serif" text-anchor="middle" font-weight="700">${h}%</text>`;}).join('')}</svg>`;
+    default: return `<svg viewBox="0 0 600 180" xmlns="http://www.w3.org/2000/svg"><rect width="600" height="180" fill="${bg}"/></svg>`;
+  }
+}
+
+// ─── Boot ───────────────────────────────────────────────────────────────────
+loadProfile();
+</script>
+</body>
+</html>
