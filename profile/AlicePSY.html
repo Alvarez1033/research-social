@@ -123,7 +123,7 @@ h1,h2,h3,h4{text-wrap:balance;line-height:1.2;}
 .btn-follow-lg.following{background:var(--color-surface-offset);color:var(--color-text);border:1.5px solid var(--color-border);}
 .btn-follow-lg.following:hover{border-color:var(--color-error);color:var(--color-error);}
 [data-theme="dark"] .btn-follow-lg:not(.following){color:#0d1117;}
-.btn-message{width:40px;height:40px;display:flex;align-items:center;justify-content:center;border-radius:var(--radius-full);border:1.5px solid var(--color-border);color:var(--color-text-muted);transition:all var(--transition-interactive);}
+.btn-message{width:40px;height:40px;display:flex;align-items:center;justify-content:center;border-radius:var(--radius-full);border:1.5px solid var(--color-border);color:var(--color-text-muted);transition:all var(--transition-interactive);text-decoration:none;}
 .btn-message:hover{border-color:var(--color-primary);color:var(--color-primary);}
 
 /* Collaborate toggle */
@@ -462,6 +462,7 @@ h1,h2,h3,h4{text-wrap:balance;line-height:1.2;}
 </footer>
 
 <script src="../data.js"></script>
+<script src="../messages.js"></script>
 <script>
 // ─── Determine which profile to show ───────────────────────────────────────
 const HANDLE = (function() {
@@ -585,9 +586,9 @@ function loadProfile() {
       <button class="btn-follow-lg ${isFollowing ? 'following' : ''}" id="followBtn" onclick="handleFollow()">
         ${isFollowing ? '✓ Following' : '+ Follow'}
       </button>
-      <button class="btn-message" title="Message" onclick="showToast('💬 Messaging coming soon!')">
+      <a class="btn-message" title="Send a message" id="msgBtn" href="../messages.html">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-      </button>`;
+      </a>`;
   } else {
     actionsEl.innerHTML = '';
     document.getElementById('editProfileBtn').style.display = 'flex';
@@ -948,8 +949,24 @@ function getChartSVG(type) {
   }
 }
 
+// ─── Message button URL ──────────────────────────────────────────────────
+// Called after profile loads to set correct URL with ?with= param
+function wireMessageBtn() {
+  const btn = document.getElementById('msgBtn');
+  if (!btn) return;
+  const me = rsGetCurrentUser();
+  if (me && me !== HANDLE) {
+    btn.href = '../messages.html?with=' + encodeURIComponent(HANDLE);
+    btn.title = 'Message @' + HANDLE;
+  } else if (!me) {
+    btn.href = '../messages.html';
+    btn.title = 'Sign in to message';
+  }
+}
+
 // ─── Boot ───────────────────────────────────────────────────────────────────
 loadProfile();
+wireMessageBtn();
 </script>
 </body>
 </html>
